@@ -1,0 +1,10 @@
+CREATE TABLE `events` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`name` TINYTEXT CHARACTER SET utf8 COLLATE utf8_bin,
+	`date` DATE,
+	`start` TIME,
+	`end` TIME,
+	`obs` TEXT DEFAULT NULL,
+	KEY `id` (`id`,`name`,`date`) USING BTREE,
+	PRIMARY KEY (`id`)
+);
